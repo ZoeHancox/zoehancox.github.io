@@ -2,11 +2,12 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   /* Header styles */
   header {
-    background-color: #333;
+    background-color: #d434b2;
     color: #fff;
     padding: 20px;
   }
@@ -54,33 +55,6 @@ body {
     margin: 0;
   }
   
-  /* Contact form styles */
-  form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-  }
-  
-  form label {
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  form button {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-  }
   
   /* Footer styles */
   footer {
