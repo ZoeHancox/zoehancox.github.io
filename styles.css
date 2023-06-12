@@ -103,4 +103,13 @@ body {
     text-align: center;
     font-size: 0.8rem;
   }
-  
+
+
+
+  .footer-image {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+  }
