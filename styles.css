@@ -3,11 +3,12 @@ body {
     margin: 10px;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #424242;
   }
   
   /* Header styles */
   header {
-    background-color: #d434b2;
+    background-color: #AD7A99;
     color: #fff;
     padding: 20px;
   }
@@ -75,7 +76,7 @@ body {
   }
   
   button:hover {
-    background-color: #7cc272;
+    background-color: #B1D1E3;
     color: #333333;
   }
   
@@ -87,8 +88,8 @@ body {
 
   /* Link styles on hover */
   a:hover {
-    color: rgb(219, 51, 177); /* Change link color on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #454ADE; /* Change link color on hover */
+    /* text-decoration: underline; Add underline on hover */
   }
 
   .hidden{
@@ -116,7 +117,7 @@ body {
   
   /* Footer styles */
   footer {
-    background-color: #d434b2;
+    background-color: #AD7A99;
     color: #fff;
     padding: 10px;
     text-align: center;
