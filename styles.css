@@ -83,12 +83,12 @@ body {
   /* Link styles */
   a {
     text-decoration: none; /* Remove underline */
-    color: black; /* Set default link color */
+    color: #454ADE; /* Set default link color */
   }
 
   /* Link styles on hover */
   a:hover {
-    color: #454ADE; /* Change link color on hover */
+    color: #A6B727; /* Change link color on hover */
     /* text-decoration: underline; Add underline on hover */
   }
 
