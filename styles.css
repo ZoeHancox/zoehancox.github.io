@@ -79,6 +79,18 @@ body {
     color: #333333;
   }
   
+  /* Link styles */
+  a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Set default link color */
+  }
+
+  /* Link styles on hover */
+  a:hover {
+    color: rgb(219, 51, 177); /* Change link color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+
   .hidden{
     display: none;
   }
