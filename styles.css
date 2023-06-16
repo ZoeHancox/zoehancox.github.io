@@ -107,6 +107,14 @@ body {
     border-radius: 10px;
   }
 
+  #quote-container {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+
 
   /* Publication Picture */
   .pub-pic{
