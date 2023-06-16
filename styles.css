@@ -4,6 +4,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #424242;
+    text-align: center;
   }
   
   /* Header styles */
@@ -37,6 +38,7 @@ body {
   /* Main section styles */
   main {
     padding: 20px;
+    text-align: center;
   }
   
   section {
@@ -67,9 +69,9 @@ body {
   }
 
   button {
-    background-color: #f2c33c;
+    background-color: #454ADE;
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
     padding: 10px;
     border-radius: 10px;
     border: 3px solid #808080;

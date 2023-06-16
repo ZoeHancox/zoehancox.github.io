@@ -5,11 +5,10 @@ document.querySelector('.clickme').addEventListener('click', () => {
   });
   
 var quotes = [
-  "Quote 1",
-  "Quote 2",
-  "Quote 3",
-  "Quote 4",
-  "Quote 5"
+  "When you experience setbacks, remember it takes both rain and sunshine to make a rainbow \uD83C\uDF08",
+  "We don't grow when things are easy. We grow when we face challenges.",
+  "Being on top of the mountain is fun, but we grow in the climb.",
+  "Your comfort zone may be your safe place, but you'll never find adventure there!",
 ];
 
 function generateRandomQuote() {
