@@ -1,155 +1,155 @@
 /* Reset some default styles */
 body {
-    margin: 10px;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #424242;
-    text-align: center;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #AD7A99;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    text-align: left;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Main section styles */
-  main {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  section h2 {
-    font-size: 2rem;
-  }
+  margin: 10px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #424242;
+  text-align: center;
+}
 
-  .construction{
-    padding: 20px;
-    color: #f5f6fa;
-    background-color: #2f3640;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: 3px solid #808080;
+/* Header styles */
+header {
+  background-color: #AD7A99;
+  color: #fff;
+  padding: 20px;
+}
 
-  }
-  
-  .project {
-    margin-bottom: 20px;
-  }
-  
-  .project h3 {
-    font-size: 1.5rem;
-    margin: 0;
-  }
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: left;
+}
 
-  button {
-    background-color: #B1D1E3;
-    font-size: 20px;
-    color: #333333;
-    padding: 10px;
-    border-radius: 10px;
-    border: 3px solid #808080;
-  }
-  
-  button:hover {
-    background-color: #454ADE;
-    color: #ffffff;
-  }
-  
-  /* Link styles */
-  a {
-    text-decoration: none; /* Remove underline */
-    color: #454ADE; /* Set default link color */
-  }
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
 
-  /* Link styles on hover */
-  a:hover {
-    color: #A6B727; /* Change link color on hover */
-    /* text-decoration: underline; Add underline on hover */
-  }
+nav ul li {
+  margin-right: 10px;
+}
 
-  .hidden{
-    display: none;
-  }
-  
-  .showing {
-    /* display: block; */
-    font-family: calibri, sans-serif;
-    /* background-color: #509fcb; */
-    color: #000000;
-    /* width: 400px;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px; */
-  }
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 
-  .container{
-    text-align: justify;
-    max-width: 800px;
-    padding-left: 200px;
-    padding-right: 200px;
-    /* border: 1px solid #ccc; */
-  }
+/* Main section styles */
+main {
+  padding: 20px;
+  text-align: center;
+}
 
+section {
+  margin-bottom: 40px;
+}
 
-  #quote-container {
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
+section h2 {
+  font-size: 2rem;
+}
+
+.construction{
+  padding: 20px;
+  color: #f5f6fa;
+  background-color: #2f3640;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 3px solid #808080;
+
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+button {
+  background-color: #B1D1E3;
+  font-size: 20px;
+  color: #333333;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid #808080;
+}
+
+button:hover {
+  background-color: #454ADE;
+  color: #ffffff;
+}
+
+/* Link styles */
+a {
+  text-decoration: none; /* Remove underline */
+  color: #454ADE; /* Set default link color */
+}
+
+/* Link styles on hover */
+a:hover {
+  color: #A6B727; /* Change link color on hover */
+  /* text-decoration: underline; Add underline on hover */
+}
+
+.hidden{
+  display: none;
+}
+
+.showing {
+  display: block;
+  font-family: calibri, sans-serif;
+  /* background-color: #509fcb; */
+  color: #000000;
+  /* width: 400px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px; */
+}
+
+.container{
+  text-align: justify;
+  max-width: 800px;
+  padding-left: 200px;
+  padding-right: 200px;
+  /* border: 1px solid #ccc; */
+}
 
 
-  /* Publication Picture */
-  .pub-pic{
-    width: 30px;
-    height: 40px;
-  }
-  
-  
-  /* Footer styles */
-  footer {
-    background-color: #AD7A99;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-size: 0.8rem;
-  }
+#quote-container {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+
+/* Publication Picture */
+.pub-pic{
+  width: 30px;
+  height: 40px;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #AD7A99;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+}
 
 
 
-  .footer-image {
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    /* border: 1px solid #ccc; */
-    border-radius: 50%;
-  }
+.footer-image {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 50%;
+}
