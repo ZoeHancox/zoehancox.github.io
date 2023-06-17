@@ -113,9 +113,19 @@ body {
   .container{
     text-align: justify;
     max-width: 800px;
-    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
     /* border: 1px solid #ccc; */
   }
+
+  .center-text{
+    text-align: center; /* Center align the text */
+  }
+
+  .center-text p {
+    text-align: justify; /* Justify the text within the paragraph */
+  }
+
 
   #quote-container {
     width: 400px;
