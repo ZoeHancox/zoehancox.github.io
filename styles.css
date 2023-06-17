@@ -118,14 +118,6 @@ body {
     /* border: 1px solid #ccc; */
   }
 
-  .center-text{
-    text-align: center; /* Center align the text */
-  }
-
-  .center-text p {
-    text-align: justify; /* Justify the text within the paragraph */
-  }
-
 
   #quote-container {
     width: 400px;
