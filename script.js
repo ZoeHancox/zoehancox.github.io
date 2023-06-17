@@ -1,9 +1,3 @@
-document.querySelector('.clickme').addEventListener('click', () => {
-    document.querySelectorAll('.hidden').forEach((item) => {
-      item.classList.toggle("showing");
-    });
-  });
-  
 var quotes = [
   "When you experience setbacks, remember it takes both rain and sunshine to make a rainbow \uD83C\uDF08",
   "We don't grow when things are easy. We grow when we face challenges.",
@@ -17,7 +11,7 @@ var quotes = [
   "'The brave man is not the one who has no fears, he is the one who triumphs over his fears.' - Nelson Mandela",
   "'Kindness is one thing you can't give away. It always comes back.' - George Skolsky",
   "'Experience is not what happens to you; it is what you do with what happens to you.' - Aldous Huxley",
-  "'Just believe in yourself. Even if you don't, pretend that you do and, at some point, you will.' - Venous Williams",
+  "'Just believe in yourself. Even if you don't, pretend that you do and, at some point, you will.' - Venus Williams",
   "Work hard in silence, let your success be your noise.",
   "The best way to predict the future is to create it.",
   "If it makes you happy, it's never a waste of time.",
@@ -32,3 +26,9 @@ function generateRandomQuote() {
   var quoteTextElement = document.getElementById("quote-text");
   quoteTextElement.textContent = quotes[randomIndex];
 }
+
+document.querySelector('.clickme').addEventListener('click', () => {
+  document.querySelectorAll('.hidden').forEach((item) => {
+    item.classList.toggle("showing");
+  });
+});
