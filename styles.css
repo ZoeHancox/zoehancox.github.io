@@ -112,8 +112,8 @@ body {
 
   .container{
     text-align: justify;
-    max-width: 600px;
-    padding: 20px;
+    max-width: 800px;
+    padding: 100px;
     /* border: 1px solid #ccc; */
   }
 
