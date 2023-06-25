@@ -113,11 +113,12 @@ a:hover {
 
 .image-container{
   display: flex;
-  align-items:right;
+  align-items:left;
 }
 
 .text-container{
   text-align: justify;
+  max-width: 800px;
 }
 
 
