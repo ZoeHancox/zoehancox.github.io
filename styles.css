@@ -113,7 +113,7 @@ a:hover {
 .container{
   text-align: justify;
   max-width: 800px;
-  display: flex;
+  /* display: flex; */
   /* align-items: center;
   justify-content: center;
   height: 100vh; */
