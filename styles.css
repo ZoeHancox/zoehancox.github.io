@@ -26,6 +26,12 @@ header h1 {
   justify-content: space-between;
 }
 
+.header-links{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
