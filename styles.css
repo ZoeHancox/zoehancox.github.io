@@ -122,11 +122,12 @@ a:hover {
 
 .image-container{
   display: flex;
-  align-items:center;
+  align-items:right;
 }
 
 .text-container{
   margin-left: 20px;
+  text-align: justify;
 }
 
 
