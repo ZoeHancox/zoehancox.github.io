@@ -20,6 +20,12 @@ header h1 {
   text-align: left;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
