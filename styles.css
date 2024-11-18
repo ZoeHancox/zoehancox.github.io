@@ -17,22 +17,6 @@ body {
   color: #424242;
 }
 
-.about-container {
-  display: flex;               /* Flexbox layout */
-  align-items: center;         /* Vertically align items */
-  gap: 1rem;                   /* Space between the image and text */
-}
-
-.profile-picture {
-  max-width: 200px;            /* Control the image size */
-  height: auto;                /* Maintain aspect ratio */
-  border-radius: 50%;          /* Optional: make the image circular */
-}
-
-.text-container {
-  max-width: 600px;            /* Restrict the width of the text */
-}
-
 
 /* Header styles */
 header {
