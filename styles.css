@@ -12,12 +12,7 @@ body {
 header {
   background-color: #AD7A99;
   color: #fff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000; /* Ensure it stays above other content */
-  border-bottom: 1px solid #ccc; /* Optional: Add a border for separation */
-  padding: 10px 20px;
+  padding: 20px;
 }
 
 header h1 {
@@ -59,8 +54,6 @@ nav ul li a {
 main {
   padding: 20px;
   text-align: center;
-  margin-top: 70px; /* Adjust based on header height */
-  margin-bottom: 70px; /* Adjust based on footer height */
 }
 
 section {
@@ -164,14 +157,9 @@ a:hover {
 footer {
   background-color: #AD7A99;
   color: #fff;
-  font-size: 0.8rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 1000; /* Ensure it stays above other content */
-  border-top: 1px solid #ccc; /* Optional: Add a border for separation */
-  padding: 10px 20px;
+  padding: 10px;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 
