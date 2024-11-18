@@ -1,11 +1,38 @@
 /* Reset some default styles */
-body {
+/* body {
   margin: 10px;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #424242;
   text-align: center;
+} */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #424242;
 }
+
+.about-container {
+  display: flex;               /* Flexbox layout */
+  align-items: center;         /* Vertically align items */
+  gap: 1rem;                   /* Space between the image and text */
+}
+
+.profile-picture {
+  max-width: 200px;            /* Control the image size */
+  height: auto;                /* Maintain aspect ratio */
+  border-radius: 50%;          /* Optional: make the image circular */
+}
+
+.text-container {
+  max-width: 600px;            /* Restrict the width of the text */
+}
+
 
 /* Header styles */
 header {
