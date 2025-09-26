@@ -27,3 +27,24 @@ function generateRandomQuote() {
   quoteTextElement.textContent = quotes[randomIndex];
 }
 
+// Toggle between full thesis PDF and TL;DR summary
+function toggleView() {
+  const thesisFrame = document.getElementById('thesisFrame');
+  const summary = document.getElementById('summary');
+
+  if (thesisFrame.style.display === 'none') {
+    thesisFrame.style.display = 'block';
+    summary.style.display = 'none';
+  } else {
+    thesisFrame.style.display = 'none';
+    summary.style.display = 'block';
+  }
+}
+
+// Collapse/expand the sidebar
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('collapsed');
+}
+
+

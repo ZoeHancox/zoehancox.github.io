@@ -34,8 +34,8 @@
     <div class="image-container">
     <section id="about">
       <h2>About Me</h2>
-      <p class="text-container">Hello! I'm Zoe Hancox. I'm currently a PhD student at the University of Leeds. I am part of the <a href="https://ai-medical.leeds.ac.uk/">UKRI Centre for Doctoral Training in Artificial Intelligence for Medical Diagnosis and Care</a>. My PhD project title is: Temporal Graph-based Convolutional Neural Networks for Electronic Healthcare Record Prediction.
-      If I'm not studying you'll find me doing yoga, jogging, gardening, reading dystopian or fantasy novels, or making wacky greeting cards.</p> 
+      <p class="text-container">Hello! I'm Zoe Hancox, a Postdoctoral Researcher at the University of Leeds
+      If I'm not working you'll find me doing yoga, cuddling my cat, jogging, gardening, reading dystopian or fantasy novels, or making wacky <a href="cards.html"> greeting cards</a>.</p> 
       <img src="images/profile_picture.jpeg" alt="profile picture" width="256" height="341.3"> 
     </section>
     </div>
@@ -43,8 +43,54 @@
     <div class="container">
     <section id="research">
       <h2>Current Research</h2>
-      <p>My research revolves around using graphs (also called networks, the kind where nodes are linked via edges) to analyse data or make predictions of health outcomes. In particular I'm trying to create temporal graphs and apply 3D convolutional neural networks to make predictions of health outcomes such as hip replacement using patient historical electronic healthcare records.</p>
+      
     </section>
+
+    <section id="thesis">
+      <h2>My PhD Thesis</h2>
+      <h3>PhD Title: Temporal Graph-based Convolutional Neural Networks for Electronic Healthcare Record Prediction.</h3>
+      This PhD was funded through the <a href="https://ai-medical.leeds.ac.uk/">UKRI Centre for Doctoral Training in Artificial Intelligence for Medical Diagnosis and Care</a>.
+      <p>My PhD research revolved around using graphs (also called networks, the kind where nodes are linked via edges) to analyse data or make predictions of health outcomes. In particular creating temporal graphs and applying 3D convolutional neural networks to make predictions of health outcomes such as hip replacement using patient historical electronic healthcare records.</p>
+      <div id="thesis-container">
+        <!-- Sidebar -->
+        <div id="sidebar">
+          <h2>Chapters</h2>
+          <a href="https://etheses.whiterose.ac.uk/id/eprint/36946/1/Zoe_Hancox_Final_Thesis.pdf#page=29" target="thesisFrame">Introduction</a>
+          <a href="https://etheses.whiterose.ac.uk/id/eprint/36946/1/Zoe_Hancox_Final_Thesis.pdf#page=37" target="thesisFrame">Background</a>
+          <a href="https://etheses.whiterose.ac.uk/id/eprint/36946/1/Zoe_Hancox_Final_Thesis.pdf#page=66" target="thesisFrame">Systematic Literature Review</a>
+          <a href="https://etheses.whiterose.ac.uk/id/eprint/36946/1/Zoe_Hancox_Final_Thesis.pdf#page=103" target="thesisFrame">TG-CNN Methodology</a>
+          <a href="https://etheses.whiterose.ac.uk/id/eprint/36946/1/Zoe_Hancox_Final_Thesis.pdf#page=129" target="thesisFrame">TG-CNNs for Hip Replacement Risk
+Prediction</a>
+          <a href="https://etheses.whiterose.ac.uk/id/eprint/36946/1/Zoe_Hancox_Final_Thesis.pdf#page=152" target="thesisFrame">Hip and Knee Replacement Risk
+Prediction</a>
+          <a href="https://etheses.whiterose.ac.uk/id/eprint/36946/1/Zoe_Hancox_Final_Thesis.pdf#page=179" target="thesisFrame">Explainable Methods for the
+TG-CNN Model</a>
+          <a href="https://etheses.whiterose.ac.uk/id/eprint/36946/1/Zoe_Hancox_Final_Thesis.pdf#page=214" target="thesisFrame">Conclusions</a>
+          <a href="https://etheses.whiterose.ac.uk/id/eprint/36946/1/Zoe_Hancox_Final_Thesis.pdf#page=225" target="thesisFrame">References</a>
+          <a href="https://etheses.whiterose.ac.uk/id/eprint/36946/1/Zoe_Hancox_Final_Thesis.pdf#page=272" target="thesisFrame">Appendices</a>
+        </div>
+
+        <!-- Main thesis area -->
+        <div id="main-thesis">
+          <div id="toolbar">
+            <div>
+              <button onclick="toggleSidebar()">☰ Chapters</button>
+              <button onclick="toggleView()">Toggle TL;DR Mode</button>
+            </div>
+          </div>
+          <div id="content">
+            <iframe id="thesisFrame" src="https://etheses.whiterose.ac.uk/id/eprint/36946/1/Zoe_Hancox_Final_Thesis.pdf"></iframe>
+            <div id="summary">
+              <h2>TL;DR Summary</h2>
+              <p>
+                This thesis introduces a Temporal Graph‑Based Convolutional Neural Network (TG‑CNN) that models Electronic Health Records as temporal graphs to predict hip and knee replacement risk up to five years in advance, achieving AUROC scores as high as 0.967. While the model delivers strong predictive performance, further work on explainability is needed to support its translation into real‑world clinical decision‑making.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section id="roles">
       <h2>Current Roles</h2>
