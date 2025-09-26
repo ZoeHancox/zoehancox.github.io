@@ -37,17 +37,89 @@
   <p>Below is a selected list of publications, the full list with citations can be found at <a href="https://scholar.google.com/citations?hl=en&user=W5HfvpUAAAAJ">Google Scholar.</a></p>
   <h2>Conference Papers</h2>
   <table>
+
+      <tr>
+      <td style="text-align: left;">Hancox, Z., Kingsbury, S.R., Clegg, A., Conaghan, P.G., Relton, S.D. (2024). 
+        <a href="https://ieeexplore.ieee.org/document/10903462">Developing the Temporal Graph Convolutional Neural Network Model to Predict Hip Replacement using Electronic Health Records.</a> 
+        In <em>International Conference on Machine Learning and Applications (ICMLA 2024)</em>.
+      </td>
+      <td><a href="https://ieeexplore.ieee.org/document/10903462" target="_blank">
+        <img src="/images/icmla.png" alt="ICMLA 2024" class="pub-pic"/></a>
+      </td>
+    </tr>
     <tr>
-      <td style="text-align: left;">Hancox, Z. and <a href="http://www.samrelton.com/">Relton, S.D.</a>, 2022, September. <a href="https://link.springer.com/chapter/10.1007/978-3-031-16564-1_34">Temporal Graph-Based CNNs (TG-CNNs) for Online Course Dropout Prediction. </a> In <em>Foundations of Intelligent Systems: 26th International Symposium, ISMIS 2022, Cosenza, Italy, October 3–5, 2022, Proceedings </em> (pp. 357-367). Cham: Springer International Publishing.</td>
+      <td colspan="2" class="hidden"><b>Abstract:</b> Background: Hip replacement procedures improve patient lives by relieving pain and restoring mobility. Predicting hip replacement in advance could reduce pain by enabling timely interventions, prioritising individuals for surgery or rehabilitation, and utilising physiotherapy to potentially delay the need for joint replacement. This study predicts hip replacement a year in advance to enhance quality of life and health service efficiency. Methods: Adapting previous work using Temporal Graph Convolutional Neural Network (TG-CNN) models, we construct temporal graphs from primary care medical event codes, sourced from ResearchOne EHRs of 40-75-year-old patients, to predict hip replacement risk. We match hip replacement cases to controls by age, sex, and Index of Multiple Deprivation. The model, trained on 9,187 cases and 9,187 controls, predicts hip replacement one year in advance. We validate the model on two unseen datasets, recalibrating for class imbalance. Additionally, we conduct an ablation study and compare against four baseline models. Results: Our best model predicts hip replacement risk one year in advance with an AUROC of 0.724 (95% CI: 0.715-0.733) and an AUPRC of 0.185 (95% CI: 0.160-0.209), achieving a calibration slope of 1.107 (95% CI: 1.074-1.139) after recalibration. Conclusions: The TG-CNN model effectively predicts hip replacement risk by identifying patterns in patient trajectories, potentially improving understanding and management of hip-related conditions.
+      </td>
+    </tr>
+
+    <tr>
+      <td style="text-align: left;">Hancox, Z., Relton, S.D., Clegg, A., Conaghan, P.G. (2023). 
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-41679-8_21">Hypergraphs for Frailty Analysis.</a> 
+        In <em>International Conference on Process Mining (ICPM 2023)</em>, pp. 271–282.
+      </td>
+      <td><a href="https://link.springer.com/chapter/10.1007/978-3-031-41679-8_21" target="_blank">
+        <img src="/images/ICPM.webp" alt="ICPM 2023" class="pub-pic"/></a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="hidden"><b>Abstract:</b> Frailty and multimorbidity becomes more prevalent as the population continues to age. We employ directed hypergraphs to represent the complex interactions among multiple health conditions and capture the inter-dependencies within multimorbidity sets. We introduce the inclusion of ‘Mortality’ nodes into directed hypergraphs. Through the analysis of ResearchOne data, we aim to identify the most prevalent combinations of frailty conditions alongside their co-occurrence with mortality, providing valuable knowledge for healthcare professionals to improve patient care and develop targeted interventions. We demonstrate that hypergraphs enable us to determine the probability of acquiring another electronic frailty index (eFI) condition, understand condition connectivity and sequentiality, and identify the most influential hyperarcs. The findings from this study suggest that hypergraphs enable us to retain progression information compared to holistic views, facilitating the implementation of more effective healthcare strategies.
+      </td>
+    </tr>
+
+    <tr>
+      <td style="text-align: left;">Hancox, Z. & <a href="http://www.samrelton.com/">Relton, S.D.</a>, 2022, September. <a href="https://link.springer.com/chapter/10.1007/978-3-031-16564-1_34">Temporal Graph-Based CNNs (TG-CNNs) for Online Course Dropout Prediction. </a> In <em>Foundations of Intelligent Systems: 26th International Symposium, ISMIS 2022, Cosenza, Italy, October 3–5, 2022, Proceedings </em> (pp. 357-367). Cham: Springer International Publishing.</td>
       <td><a href="https://link.springer.com/chapter/10.1007/978-3-031-16564-1_34" target="_blank"><img src="/images/foundations_of_intelligent_systems.jpg" alt="ISMIS 2022: Foundations of Intelligent Systems" class="pub-pic"/></a></td>
     </tr>
     <tr>
       <td colspan="2" class="hidden"><b>Abstract:</b> Due to the global pandemic, the use of online courses is increasing significantly; yet the rate of student dropout from online courses is rising. The Accessible Culture & Training Massive Open Online Course (ACT MOOC) dataset is comprised of a temporal sequence of student actions and subsequent dropout information. We introduce a novel approach based upon temporal graphs, which uses the sequence of (and time between) events to predict dropout. The dataset consists of 7,047 users, with a dropout rate of 57.7%. The Temporal Graph-Based Convolutional Neural Network (TG-CNN) models developed in this study are compared against baseline models and existing models in the literature. Performance is assessed using the AUC, accuracy, precision, recall, and F1 score. Our novel TG-CNN model achieves an AUC score of 0.797, which improves upon previous literature: JODIE 0.756, TGN + MeTA 0.794, TGN 0.777, and CoPE 0.762. Our model offers a novel and intuitive formulation of this problem, with state-of-the-art performance.</td>
     </tr>
+    
+
+
+
+
+
   </table>
 
   <h2>Articles</h2>
   <table>
+      <tr>
+        <td style="text-align: left;">Hancox, Z., Kingsbury, S.R., Conaghan, P.G., Clegg, A. & Relton, S.D (2025). <a href="https://academic.oup.com/rheumatology/article/64/8/4589/8105566">Primary care prediction of hip and knee replacement 1–5 years in advance using Temporal Graph-based Convolutional Neural Networks (TG-CNNs).</a> In <em>Principles of Biomaterials Encapsulation: Volume Two,</em> 661-720. </td>
+        <td><a href="https://academic.oup.com/rheumatology/article/64/8/4589/8105566" target="_blank"><img src="/images/rheumatology_cover.jpeg" alt="Rheumatology" class="pub-pic"/></a></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="hidden"><b>Abstract:</b>Objective: This study aimed to predict the risk of requiring a primary hip or knee replacement 1 and 5 years in advance, using clinical codes.
+Methods: Primary care clinical codes, sourced from ResearchOne Electronic Health Records between 1999 and 2014, were used to represent patient pathways prior to hip or knee replacement. Patient records were used to train and test models for hip or knee replacement, 1 and 5 years in advance. Temporal graphs were constructed from clinical codes to predict hip and knee replacement risk, where nodes are clinical codes, and edges are the time between primary care visits. Hip and knee replacement cases were matched to controls by age, sex and Index of Multiple Deprivation. The model was validated on unseen data, with performance measured using area under the receiver operator curve (AUROC), calibration and area under the precision recall curve (AUPRC), recalibrating for class imbalance.
+Results: For knee replacement prediction, AUROC was 0.915 (95% CI 0.914, 0.916) (1 year) and 0.955 (95% CI 0.954, 0.956) (5 years) with AUPRCs of 0.353 (95% CI 0.302, 0.403) and 0.442 (95% CI 0.382, 0.503), respectively. For hip replacement prediction, AUROC was 0.919 (95% CI 0.918, 0.920) (1 year) and 0.967 (95% CI 0.966, 0.968) (5 years), with AUPRCs of 0.409 (95% CI 0.366, 0.451) and 0.879 (95% CI 0.833, 0.924), respectively.
+Conclusion: Hip and knee replacement risk can be predicted up to 5 years in advance, with a temporal-graph based artificial intelligence model achieving the best performance. This may be used for planning preventative treatment or triaging patients. </td>
+      </tr>
+
+      <tr>
+      <td style="text-align: left;">
+        Hancox, Z.,  Pang, A., Conaghan, P.G., Kingsbury, S.R., Clegg, A. & Relton, S.D. (2023). 
+        <a href="https://www.sciencedirect.com/science/article/pii/S0933365724002410">
+          A systematic review of networks for prognostic prediction of health outcomes and diagnostic prediction of health conditions within Electronic Health Records.
+        </a> 
+        <em>Artificial Intelligence in Medicine, 145</em>, 104531.
+      </td>
+      <td>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0933365724002410" target="_blank">
+          <img src="/images/AI_in_med.gif" alt="Artificial Intelligence in Medicine" class="pub-pic"/>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="hidden">
+        <b>Abstract:</b> Background and objective: Using graph theory, Electronic Health Records (EHRs) can be represented graphically to exploit the relational dependencies of the multiple information formats to improve Machine Learning (ML) prediction models. In this systematic qualitative review, we explore the question: How are graphs used on EHRs, to predict diagnosis and health outcomes?
+    Methodology: The search strategy identified studies that used patient-level graph representations of EHRs to utilise ML to predict health outcomes and diagnoses. We conducted our search on MEDLINE, Web of Science and Scopus.
+    Results: 832 studies were identified by the search strategy, of which 27 studies were selected for data extraction. Following data extraction, 18 studies used ML with patient-level graph-based representations of EHRs to predict health outcomes and diagnoses. Models ranged from traditional ML to neural network-based models. MIMIC-III was the most used dataset (n = 6, where n is the number of occurrences), followed by National Health Insurance Research Database (NHIRD) (n = 4) and eICU Collaborative Research Database (eICU) (n = 4). The most predicted health outcomes were mortality (n = 9; 21%), hospital readmission (n = 9; 21%), and treatment success (n = 4; 9%). Model performances ranged across outcomes, mortality prediction (Area Under the Receiver Operating Characteristic (AUROC): 72.1 - 91.6; Area Under Precision-Recall Curve (AUPRC): 34.8 - 81.3) and readmission prediction (AUROC: 63.7 - 85.8; AUPRC 39.86 - 84.7). Only one paper had a low Risk of Bias (RoB) that applied to our research question (4%).
+    Conclusion: Graph-based representations using EHRs, for individual health outcomes and diagnoses requires further research before we can see the results applied clinically. The use of graph representations appears to improve EHR representation and predictive performance compared to baseline ML methods in multiple fields of medicine.
+      </td>
+    </tr>
+
+
+
+
       <tr>
         <td style="text-align: left;">Hancox, Z., Hussain, H.S.D. & Sefat, F. (2023). <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128243459000258">Encapsulation for breast cancer treatment.</a> In <em>Principles of Biomaterials Encapsulation: Volume Two,</em> 661-720. </td>
         <td><a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128243459000258" target="_blank"><img src="/images/principles_of_encaps_book.jpg" alt="Principles of Biomaterials Encapsulation" class="pub-pic"/></a></td>
@@ -64,7 +136,7 @@
       </tr>
 
       <tr>
-        <td style="text-align: left;">Banami, M.A., Rahmatullah, M., Farhan, N., Hancox, Z., Yousaf, S., Arabpour,Z., Moghaddam, Z., Mozafari, M. and Sefat, F. (2021) <a href="https://pubmed.ncbi.nlm.nih.gov/33533667/">Adipose tissue-derived mesenchymal stem cells for breast tissue regeneration. </a> In <em>Future Medicine.</em> 47-70 </td>
+        <td style="text-align: left;">Banami, M.A., Rahmatullah, M., Farhan, N., Hancox, Z., Yousaf, S., Arabpour,Z., Moghaddam, Z., Mozafari, M. & Sefat, F. (2021) <a href="https://pubmed.ncbi.nlm.nih.gov/33533667/">Adipose tissue-derived mesenchymal stem cells for breast tissue regeneration. </a> In <em>Future Medicine.</em> 47-70 </td>
         <td><a href="https://pubmed.ncbi.nlm.nih.gov/33533667/" target="_blank"><img src="/images/future_in_medicine.PNG" alt="Future Medicine" class="pub-pic"/></a></td>
       </tr>
       <tr>
@@ -72,7 +144,7 @@
       </tr>
 
       <tr>
-        <td style="text-align: left;">Shang, Z., Zhao, Z., Fang, H., Relton, S., Murphy, D., Hancox, Z., Yan, R. and Wong, D., 2021, September <a href="https://ieeexplore.ieee.org/document/9662844">Deep Discriminative Domain Generalization with Adversarial Feature Learning for Classifying ECG Signals.</a> In <em>2021 Computing in Cardiology (CinC) </em> (Vol. 48, pp. 1-4). IEEE. </td>
+        <td style="text-align: left;">Shang, Z., Zhao, Z., Fang, H., Relton, S., Murphy, D., Hancox, Z., Yan, R. & Wong, D., 2021, September <a href="https://ieeexplore.ieee.org/document/9662844">Deep Discriminative Domain Generalization with Adversarial Feature Learning for Classifying ECG Signals.</a> In <em>2021 Computing in Cardiology (CinC) </em> (Vol. 48, pp. 1-4). IEEE. </td>
         <td><a href="https://ieeexplore.ieee.org/document/9662844" target="_blank"><img src="/images/computing_in_cardiology.png" alt="IEEE" class="pub-pic"/></a></td>
       </tr>
       <tr>
@@ -80,7 +152,7 @@
       </tr>
 
       <tr>
-        <td style="text-align: left;">Hancox, Z., Heidari Keshel, S., Yousaf, S., Saeinasab, M., Shahbazi, M.A., Sefat, F. (2020). <a href="https://pubs.rsc.org/en/content/articlelanding/2020/bm/d0bm01209b">The Progress in Corneal Translational Medicine</a>, Biomaterials Science, 2020, DOI: 10.1039/D0BM01209B. </td>
+        <td style="text-align: left;">Hancox, Z., Heidari Keshel, S., Yousaf, S., Saeinasab, M., Shahbazi, M.A. & Sefat, F. (2020). <a href="https://pubs.rsc.org/en/content/articlelanding/2020/bm/d0bm01209b">The Progress in Corneal Translational Medicine</a>, Biomaterials Science, 2020, DOI: 10.1039/D0BM01209B. </td>
         <td><a href="https://pubs.rsc.org/en/content/articlelanding/2020/bm/d0bm01209b" target="_blank"><img src="/images/biomaterials_science.jpg" alt="Biomaterials Science" class="pub-pic"/></a></td>
       </tr>
       <tr>
