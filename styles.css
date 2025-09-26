@@ -232,8 +232,6 @@ iframe {
   height: 0;
   overflow: hidden;
   max-width: 100%;
-  background: #000; /* optional, gives a black background */
-  margin: 1rem auto;
 }
 
 .video-container iframe {
