@@ -184,35 +184,7 @@ Thesis Viewer Styles
   position: relative;
 }
 
-/* Sidebar */
-#sidebar {
-  width: 220px;
-  background: #2c3e50;
-  color: #ecf0f1;
-  padding: 20px;
-  box-sizing: border-box;
-  transition: transform 0.3s ease;
-}
-#sidebar h2 {
-  font-size: 18px;
-  margin-top: 0;
-}
-#sidebar a {
-  display: block;
-  color: #ecf0f1;
-  text-decoration: none;
-  margin: 8px 0;
-  padding: 6px;
-  border-radius: 4px;
-}
-#sidebar a:hover {
-  background: #34495e;
-}
 
-/* Collapsed sidebar */
-#sidebar.collapsed {
-  transform: translateX(-100%);
-}
 
 /* Main thesis area */
 #main-thesis {
