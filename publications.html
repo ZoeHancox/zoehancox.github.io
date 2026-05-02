@@ -29,6 +29,26 @@
   <p>Below is a selected list of publications, the full list with citations can be found at <a href="https://scholar.google.com/citations?hl=en&user=W5HfvpUAAAAJ">Google Scholar.</a></p>
   <h2>Conference Papers</h2>
   <table>
+      <tr>
+        <td style="text-align: left;">Hancox, Z., Best, K.E., Todd, O., Hartley, B., Evans, R. & Relton, S.D (2026). <a href="https://eprints.whiterose.ac.uk/id/eprint/240448/"> Temporal Drift in Action: Evaluating Strategies to Detect and Repair Drift using Real-World Data on Stroke and Myocardial Infarctions.</a> In <em>Computer Based Medical Systems. </td>
+        <td><a href="https://eprints.whiterose.ac.uk/id/eprint/240448/" target="_blank"><img src="/images/rheumatology_cover.jpeg" alt="IEEE" class="pub-pic"/></a></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="hidden"><b>Abstract:</b>Clinical prediction models are increasingly embedded within healthcare systems, yet their performance can deteriorate over time due to temporal drift. Such drift may arise from changes in population characteristics, data recording practices, or underlying clinical relationships, and can lead to miscalibrated risk estimates that compromise patient safety.
+In this study we compare multiple strategies to detect (and potentially repair) temporal drift including the monitoring of
+performance metrics, analysis of model residuals using statistical process control and Kullback–Leibler divergence, and assessment of input data stability through discrimination error. We
+apply these approaches to a real-world case study using data from Connected Bradford, evaluating a logistic regression model aligned with QRISK-2 for predicting 10-year risk of heart attack
+or stroke. Model behaviour was assessed monthly over a seven year period (2008 to 2015), with recalibration triggered whenever
+predefined thresholds were exceeded. Our findings show clear evidence of temporal drift, with
+degradation in calibration and increasing divergence in residual distributions over time. Approaches based on maintaining performance thresholds produced the most accurate and stable
+predictions, although methods using model residuals offered similar performance. Regular recalibration at fixed intervals
+demonstrated reasonable accuracy while offering operational advantages due to predictable resource requirements. Methods
+independent of model residuals, such as discrimination error, detected drift without requiring long term outcome data and
+may therefore be more viable in contexts with substantial delays before outcomes can be observed.
+Overall, the results highlight the importance of systematic drift monitoring for clinical prediction models intended for
+deployment at scale. The software library released as part of this research provides practical tools for detecting and mitigating drift, with clear trade-offs between statistical performance,
+regulatory considerations, and real-world feasibility.
+      </tr>
 
       <tr>
       <td style="text-align: left;">Hancox, Z., Kingsbury, S.R., Clegg, A., Conaghan, P.G., Relton, S.D. (2024). 
@@ -75,6 +95,17 @@
 
   <h2>Articles</h2>
   <table>
+    ., 2026.
+      <tr>
+        <td style="text-align: left;">Hancox, Z., Wong, D., Kingsbury, S.R., Conaghan, P.G., Clegg, A. and Relton, S.D (2026). <a href="https://eprints.whiterose.ac.uk/id/eprint/237548/">Explainable temporal graph-based CNNs for predicting hip replacement risk using EHR data</a> In <em>BMJ Digital Health & AI, Volume 2.</em> </td>
+        <td><a href="https://eprints.whiterose.ac.uk/id/eprint/237548/" target="_blank"><img src="/images/rheumatology_cover.jpeg" alt="BMJ Digital Health & AI" class="pub-pic"/></a></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="hidden"><b>Abstract:</b> Objective: To develop and compare four explainable artificial intelligence methods to visualise the influence of electronic health records (EHRs) on predicting hip replacement risk. 
+Methods and analysis:We used a pretrained temporal graph-based convolutional neural networks (TGCNN) model to generate explainable graph visualisations through four methods: the original gradient-weighted class activation mapping (Grad-CAM) applied to graphs, a modified Grad-CAM using absolute weights (Grad-CAM (abs)), sliding element-wise multiplication of feature maps with patient graph inputs (fm-act) and of 3D convolutional neural networks filters/kernels with patient graph inputs (edge-act). These methods visually explain the TGCNN model’s predictions regarding a person’s risk of needing a hip replacement within 5 years, based on clinical codes from EHRs. We evaluated these models through human qualitative analysis studies, sensitivity quantification, edge detection bias and sparsity.
+Results:The edge-act methods performed best in terms of graph sparsity and model sensitivity. Subgraph analysis indicated that prescriptions highly influenced predictions. Clinicians found the visualisations useful for explaining model predictions but too complex for clinical decision-making, particularly with extensive patient EHRs.
+Conclusions: The fm-act and Grad-CAM (abs) methods led to graphs with zero sparsity; these graphs could be difficult to interpret if the patient has a long EHR history. The edge-act median method had the highest sparsity; therefore, this method might be the easiest to interpret for long EHR histories. We improved the explainability of hip replacement risk predictions using four post hoc methods on the TGCNN model. Further refinement could enhance their utility in clinical decision-making.</td>
+      </tr>
       <tr>
         <td style="text-align: left;">Hancox, Z., Kingsbury, S.R., Conaghan, P.G., Clegg, A. & Relton, S.D (2025). <a href="https://academic.oup.com/rheumatology/article/64/8/4589/8105566">Primary care prediction of hip and knee replacement 1–5 years in advance using Temporal Graph-based Convolutional Neural Networks (TG-CNNs).</a> In <em>Rheumatology, Volume 64,</em> 4589–4598. </td>
         <td><a href="https://academic.oup.com/rheumatology/article/64/8/4589/8105566" target="_blank"><img src="/images/rheumatology_cover.jpeg" alt="Rheumatology" class="pub-pic"/></a></td>
