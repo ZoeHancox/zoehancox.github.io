@@ -1,11 +1,15 @@
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="home-page publications-page">
 <header>
     <div class="header">
       <h1>Zoe Hancox</h1>
@@ -13,25 +17,28 @@
 
     <nav>
       <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="cards.html">Cards</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="publications.html" aria-current="page">Publications</a></li>
+        <li><a href="cards.html">Creativity</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-<main>
-<div class="container">
-  
-  <h1>Publications</h1>
+<main class="site-main">
+<section class="section-card publications-hero">
+  <p class="eyebrow">Research Outputs</p>
+  <h2>Publications</h2>
   <button class='clickme'>Toggle show abstracts</button>
   <p>Below is a selected list of publications, the full list with citations can be found at <a href="https://scholar.google.com/citations?hl=en&user=W5HfvpUAAAAJ">Google Scholar.</a></p>
+</section>
+
+<section class="section-card publications-list">
   <h2>Conference Papers</h2>
-  <table>
+  <table class="publications-table">
       <tr>
         <td style="text-align: left;">Hancox, Z., Best, K.E., Todd, O., Hartley, B., Evans, R. & Relton, S.D (2026). <a href="https://eprints.whiterose.ac.uk/id/eprint/240448/"> Temporal Drift in Action: Evaluating Strategies to Detect and Repair Drift using Real-World Data on Stroke and Myocardial Infarctions.</a> In <em>Computer Based Medical Systems. </td>
-        <td><a href="https://eprints.whiterose.ac.uk/id/eprint/240448/" target="_blank"><img src="/images/cmbs_2026.jpg" alt="IEEE" class="pub-pic"/></a></td>
+        <td><a href="https://eprints.whiterose.ac.uk/id/eprint/240448/" target="_blank"><img src="images/cmbs_2026.jpg" alt="IEEE" class="pub-pic"/></a></td>
       </tr>
       <tr>
         <td colspan="2" class="hidden"><b>Abstract:</b>Clinical prediction models are increasingly embedded within healthcare systems, yet their performance can deteriorate over time due to temporal drift. Such drift may arise from changes in population characteristics, data recording practices, or underlying clinical relationships, and can lead to miscalibrated risk estimates that compromise patient safety.
@@ -56,7 +63,7 @@ regulatory considerations, and real-world feasibility.
         In <em>International Conference on Machine Learning and Applications (ICMLA 2024)</em>.
       </td>
       <td><a href="https://ieeexplore.ieee.org/document/10903462" target="_blank">
-        <img src="/images/icmla.png" alt="ICMLA 2024" class="pub-pic"/></a>
+        <img src="images/icmla.png" alt="ICMLA 2024" class="pub-pic"/></a>
       </td>
     </tr>
     <tr>
@@ -70,7 +77,7 @@ regulatory considerations, and real-world feasibility.
         In <em>International Conference on Process Mining (ICPM 2023)</em>, pp. 271–282.
       </td>
       <td><a href="https://link.springer.com/chapter/10.1007/978-3-031-41679-8_21" target="_blank">
-        <img src="/images/ICPM.webp" alt="ICPM 2023" class="pub-pic"/></a>
+        <img src="images/ICPM.webp" alt="ICPM 2023" class="pub-pic"/></a>
       </td>
     </tr>
     <tr>
@@ -80,7 +87,7 @@ regulatory considerations, and real-world feasibility.
 
     <tr>
       <td style="text-align: left;">Hancox, Z. & <a href="http://www.samrelton.com/">Relton, S.D.</a>, 2022, September. <a href="https://link.springer.com/chapter/10.1007/978-3-031-16564-1_34">Temporal Graph-Based CNNs (TG-CNNs) for Online Course Dropout Prediction. </a> In <em>Foundations of Intelligent Systems: 26th International Symposium, ISMIS 2022, Cosenza, Italy, October 3–5, 2022, Proceedings </em> (pp. 357-367). Cham: Springer International Publishing.</td>
-      <td><a href="https://link.springer.com/chapter/10.1007/978-3-031-16564-1_34" target="_blank"><img src="/images/foundations_of_intelligent_systems.jpg" alt="ISMIS 2022: Foundations of Intelligent Systems" class="pub-pic"/></a></td>
+      <td><a href="https://link.springer.com/chapter/10.1007/978-3-031-16564-1_34" target="_blank"><img src="images/foundations_of_intelligent_systems.jpg" alt="ISMIS 2022: Foundations of Intelligent Systems" class="pub-pic"/></a></td>
     </tr>
     <tr>
       <td colspan="2" class="hidden"><b>Abstract:</b> Due to the global pandemic, the use of online courses is increasing significantly; yet the rate of student dropout from online courses is rising. The Accessible Culture & Training Massive Open Online Course (ACT MOOC) dataset is comprised of a temporal sequence of student actions and subsequent dropout information. We introduce a novel approach based upon temporal graphs, which uses the sequence of (and time between) events to predict dropout. The dataset consists of 7,047 users, with a dropout rate of 57.7%. The Temporal Graph-Based Convolutional Neural Network (TG-CNN) models developed in this study are compared against baseline models and existing models in the literature. Performance is assessed using the AUC, accuracy, precision, recall, and F1 score. Our novel TG-CNN model achieves an AUC score of 0.797, which improves upon previous literature: JODIE 0.756, TGN + MeTA 0.794, TGN 0.777, and CoPE 0.762. Our model offers a novel and intuitive formulation of this problem, with state-of-the-art performance.</td>
@@ -94,10 +101,10 @@ regulatory considerations, and real-world feasibility.
   </table>
 
   <h2>Articles</h2>
-  <table>
+  <table class="publications-table">
       <tr>
         <td style="text-align: left;">Hancox, Z., Wong, D., Kingsbury, S.R., Conaghan, P.G., Clegg, A. and Relton, S.D (2026). <a href="https://eprints.whiterose.ac.uk/id/eprint/237548/">Explainable temporal graph-based CNNs for predicting hip replacement risk using EHR data</a> In <em>BMJ Digital Health & AI, Volume 2.</em> </td>
-        <td><a href="https://eprints.whiterose.ac.uk/id/eprint/237548/" target="_blank"><img src="/images/BMJ_digital_health.avif" alt="BMJ Digital Health & AI" class="pub-pic"/></a></td>
+        <td><a href="https://eprints.whiterose.ac.uk/id/eprint/237548/" target="_blank"><img src="images/BMJ_digital_health.avif" alt="BMJ Digital Health & AI" class="pub-pic"/></a></td>
       </tr>
       <tr>
         <td colspan="2" class="hidden"><b>Abstract:</b> Objective: To develop and compare four explainable artificial intelligence methods to visualise the influence of electronic health records (EHRs) on predicting hip replacement risk. 
@@ -107,7 +114,7 @@ Conclusions: The fm-act and Grad-CAM (abs) methods led to graphs with zero spars
       </tr>
       <tr>
         <td style="text-align: left;">Hancox, Z., Kingsbury, S.R., Conaghan, P.G., Clegg, A. & Relton, S.D (2025). <a href="https://academic.oup.com/rheumatology/article/64/8/4589/8105566">Primary care prediction of hip and knee replacement 1–5 years in advance using Temporal Graph-based Convolutional Neural Networks (TG-CNNs).</a> In <em>Rheumatology, Volume 64,</em> 4589–4598. </td>
-        <td><a href="https://academic.oup.com/rheumatology/article/64/8/4589/8105566" target="_blank"><img src="/images/rheumatology_cover.jpeg" alt="Rheumatology" class="pub-pic"/></a></td>
+        <td><a href="https://academic.oup.com/rheumatology/article/64/8/4589/8105566" target="_blank"><img src="images/rheumatology_cover.jpeg" alt="Rheumatology" class="pub-pic"/></a></td>
       </tr>
       <tr>
         <td colspan="2" class="hidden"><b>Abstract:</b>Objective: This study aimed to predict the risk of requiring a primary hip or knee replacement 1 and 5 years in advance, using clinical codes.
@@ -126,7 +133,7 @@ Conclusion: Hip and knee replacement risk can be predicted up to 5 years in adva
       </td>
       <td>
         <a href="https://www.sciencedirect.com/science/article/pii/S0933365724002410" target="_blank">
-          <img src="/images/AI_in_med.gif" alt="Artificial Intelligence in Medicine" class="pub-pic"/>
+          <img src="images/AI_in_med.gif" alt="Artificial Intelligence in Medicine" class="pub-pic"/>
         </a>
       </td>
     </tr>
@@ -144,14 +151,14 @@ Conclusion: Hip and knee replacement risk can be predicted up to 5 years in adva
 
       <tr>
         <td style="text-align: left;">Hancox, Z., Hussain, H.S.D. & Sefat, F. (2023). <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128243459000258">Encapsulation for breast cancer treatment.</a> In <em>Principles of Biomaterials Encapsulation: Volume Two,</em> 661-720. </td>
-        <td><a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128243459000258" target="_blank"><img src="/images/principles_of_encaps_book.jpg" alt="Principles of Biomaterials Encapsulation" class="pub-pic"/></a></td>
+        <td><a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128243459000258" target="_blank"><img src="images/principles_of_encaps_book.jpg" alt="Principles of Biomaterials Encapsulation" class="pub-pic"/></a></td>
       </tr>
       <tr>
         <td colspan="2" class="hidden"><b>Abstract:</b> Chemotherapy is most traditionally used to treat breast cancer, however the systemic toxicity and side effects associated with it render chemotherapy treatment nonideal. This chapter describes the requirements for encapsulation systems to treat breast cancer. Furthermore, some recent breast cancer treatments that use encapsulation to improve treatment outcomes are compared. There are many cases of successful enhancement of therapeutic drug delivery using encapsulation systems. Encapsulation devices can reduce the systemic toxicity on healthy cells while inducing apoptosis or cell proliferation on breast cancer cells. Using encapsulation methods for breast cancer treatment provide more discrete and less invasive methods to treat cancer, while improving patient reported outcomes. This chapter aims to provide the reader with an insight into the current biomaterials and drugs used in nanomedicine to improve the treatment of breast cancer.</td>
       </tr>
       <tr>
         <td style="text-align: left;">Hancox, Z., Nisar, A. & Sefat, F., (2023). <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128243459000209">Encapsulation of natural materials</a> In <em>Principles of Biomaterials Encapsulation: Volume Two,</em> 39-92. </td>
-        <td><a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128243459000209" target="_blank"><img src="/images/principles_of_encaps_book.jpg" alt="Principles of Biomaterials Encapsulation" class="pub-pic"/></a></td>
+        <td><a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128243459000209" target="_blank"><img src="images/principles_of_encaps_book.jpg" alt="Principles of Biomaterials Encapsulation" class="pub-pic"/></a></td>
       </tr>
       <tr>
         <td colspan="2" class="hidden"><b>Abstract:</b> By using natural biomaterials, scientists have been able to design and create a range of encapsulation devices with various mechanical and bio-functionalities to hold specific molecules for a multitude of applications. These natural biomaterial encapsulation tools can provide protection from the host’s immune system and from harsh environments. Encapsulation vehicles can enable control of the encapsulated molecules or cells, to allow them to reach the required target location or even direct cell differentiation lineage in stem cell applications. When encapsulating cells, encapsulation can aid cell expansion and maintain cell viability. Cell-matrix interaction, biodegradation, and biocompatibility can be enhanced to improve treatment using targeted drug delivery. Natural materials are attractive for many medical and tissue engineering applications, such as transplantation, drug delivery, cell delivery, and regenerative medicine. There are various natural materials used as encapsulation vehicles, the properties of these materials, including mechanical properties, sources, permeability, and modification techniques, are vital to tune depending on the encapsulation application. In this chapter some of the current natural biomaterials used for creating encapsulation vehicles and their advantages and challenges will be discussed.</td>
@@ -159,7 +166,7 @@ Conclusion: Hip and knee replacement risk can be predicted up to 5 years in adva
 
       <tr>
         <td style="text-align: left;">Banami, M.A., Rahmatullah, M., Farhan, N., Hancox, Z., Yousaf, S., Arabpour,Z., Moghaddam, Z., Mozafari, M. & Sefat, F. (2021) <a href="https://pubmed.ncbi.nlm.nih.gov/33533667/">Adipose tissue-derived mesenchymal stem cells for breast tissue regeneration. </a> In <em>Future Medicine.</em> 47-70 </td>
-        <td><a href="https://pubmed.ncbi.nlm.nih.gov/33533667/" target="_blank"><img src="/images/future_in_medicine.PNG" alt="Future Medicine" class="pub-pic"/></a></td>
+        <td><a href="https://pubmed.ncbi.nlm.nih.gov/33533667/" target="_blank"><img src="images/future_in_medicine.PNG" alt="Future Medicine" class="pub-pic"/></a></td>
       </tr>
       <tr>
         <td colspan="2" class="hidden"><b>Abstract:</b> With an escalating incidence of breast cancer cases all over the world and the deleterious psychological impact that mastectomy has on patients along with several limitations of the currently applied modalities, it's plausible to seek unconventional approaches to encounter such a burgeoning issue. Breast tissue engineering may allow that chance via providing more personalized solutions which are able to regenerate, mimicking natural tissues also facing the witnessed limitations. This review is dedicated to explore the utilization of adipose tissue-derived mesenchymal stem cells for breast tissue regeneration among postmastectomy cases focusing on biomaterials and cellular aspects in terms of harvesting, isolation, differentiation and new tissue formation as well as scaffolds types, properties, material-host interaction and an in vitro breast tissue modeling.</td>
@@ -167,7 +174,7 @@ Conclusion: Hip and knee replacement risk can be predicted up to 5 years in adva
 
       <tr>
         <td style="text-align: left;">Shang, Z., Zhao, Z., Fang, H., Relton, S., Murphy, D., Hancox, Z., Yan, R. & Wong, D., 2021, September <a href="https://ieeexplore.ieee.org/document/9662844">Deep Discriminative Domain Generalization with Adversarial Feature Learning for Classifying ECG Signals.</a> In <em>2021 Computing in Cardiology (CinC) </em> (Vol. 48, pp. 1-4). IEEE. </td>
-        <td><a href="https://ieeexplore.ieee.org/document/9662844" target="_blank"><img src="/images/computing_in_cardiology.png" alt="IEEE" class="pub-pic"/></a></td>
+        <td><a href="https://ieeexplore.ieee.org/document/9662844" target="_blank"><img src="images/computing_in_cardiology.png" alt="IEEE" class="pub-pic"/></a></td>
       </tr>
       <tr>
         <td colspan="2" class="hidden"><b>Abstract:</b> Introduction: The goal of the 2021 PhysioNet/CinC challenge is to classify cardiac abnormalities from ECGs and evaluate the diagnostic potential of reduced-lead ECGs. Here, we describe the classification model created by the team “AI_Healthcare”. Methods: ECGs were downsampled to 300 Hz and filtered by wavelet. ECGs were randomly clipped or zero-padded to 4,096 samples. We modified an SE-ResNet to perform multi-task classification of both dataset and disease. We used a gradient reversal layer as part of an adversarial feature learning scheme to learn domain-invariant and discriminative representations. Results: We trained our domain-invariant model on 5 datasets, keeping one data set (Ningbo) for local validation. We also trained a baseline SE-ResNet using the same training data. In validation on the held-out data set, the domain-invariant model had a higher Challenge metric than the baseline model. Our entry was not officially ranked in the Challenge, as we did not have a successful entry during the unofficial phase of the Challenge. Conclusion: The domain-invariant model performed better than the baseline model in local held-out datasets, suggesting that this method may help improve generalisation performance.</td>
@@ -175,7 +182,7 @@ Conclusion: Hip and knee replacement risk can be predicted up to 5 years in adva
 
       <tr>
         <td style="text-align: left;">Hancox, Z., Heidari Keshel, S., Yousaf, S., Saeinasab, M., Shahbazi, M.A. & Sefat, F. (2020). <a href="https://pubs.rsc.org/en/content/articlelanding/2020/bm/d0bm01209b">The Progress in Corneal Translational Medicine</a>, Biomaterials Science, 2020, DOI: 10.1039/D0BM01209B. </td>
-        <td><a href="https://pubs.rsc.org/en/content/articlelanding/2020/bm/d0bm01209b" target="_blank"><img src="/images/biomaterials_science.jpg" alt="Biomaterials Science" class="pub-pic"/></a></td>
+        <td><a href="https://pubs.rsc.org/en/content/articlelanding/2020/bm/d0bm01209b" target="_blank"><img src="images/biomaterials_science.jpg" alt="Biomaterials Science" class="pub-pic"/></a></td>
       </tr>
       <tr>
         <td colspan="2" class="hidden"><b>Abstract:</b> Cornea tissue is in high demand by tissue donation centres globally, and thus tissue engineering cornea, which is the main topic of corneal translational medicine, can serve as a limitless alternative to a donated human cornea tissue. Tissue engineering aims to produce solutions to the challenges associated with conventional cornea tissue, including transplantation and use of human amniotic membrane (HAM), which have issues with storage and immune rejection in patients. Accordingly, by carefully selecting biomaterials and fabrication methods to produce these therapeutic tissues, the demand for cornea tissue can be met, with an improved healing outcome for recipients with less associated harmful risks. In this review paper, we aim to present the recent advancements in the research and clinical applications of cornea tissue, applications including biomaterial selection, fabrication methods, scaffold structure, cellular response to these scaffolds, and future advancements of these techniques.</td>
@@ -183,7 +190,7 @@ Conclusion: Hip and knee replacement risk can be predicted up to 5 years in adva
 
       <tr>
         <td style="text-align: left;">Hancox, Z., Yousaf, S., Farzi, G., Momeni-Moghadam, M., Shakeri, S., Khaghani, S., Youseffi, M., Mozafari, M. & Sefat, F. (2019) <a href="Scaffolds for tracheal tissue engineering. Handbook of Tissue Engineering Scaffolds: Volume Two">Scaffolds for tracheal tissue engineering. </a> <em>Handbook of Tissue Engineering Scaffolds: Volume Two,</em> 361-391 </td>
-        <td><a href="Scaffolds for tracheal tissue engineering. Handbook of Tissue Engineering Scaffolds: Volume Two" target="_blank"><img src="/images/tissue_eng_handbook_vol2.jpg" alt="Handbook of Tissue Engineering Scaffolds: Volume Two" class="pub-pic"/></a></td>
+        <td><a href="Scaffolds for tracheal tissue engineering. Handbook of Tissue Engineering Scaffolds: Volume Two" target="_blank"><img src="images/tissue_eng_handbook_vol2.jpg" alt="Handbook of Tissue Engineering Scaffolds: Volume Two" class="pub-pic"/></a></td>
       </tr>
       <tr>
         <td colspan="2" class="hidden"><b>Abstract:</b> This chapter aims to expand the reader's knowledge on the human trachea, problems that commonly arise within the windpipe, and correctional methods for these issues, including tissue-engineered solutions. Cell derivation is covered to give examples of what could potentially work successfully and the advantages and disadvantages of specific derivations. A variety of experimental scaffold construction techniques will be discussed in detail, allowing the reader to obtain an understanding of the intricate methods required to make tissue-engineered tracheal tissue. This chapter demonstrates the extensive parameters required to make successful tissue with the ability to withstand the stresses of native tissue, while creating an environment for cells to grow and thrive on.</td>
@@ -191,7 +198,7 @@ Conclusion: Hip and knee replacement risk can be predicted up to 5 years in adva
 
       <tr>
         <td style="text-align: left;">Hancox, Z., Yousaf, S., Shah, T., Fhong, S., Zhang, W., Ahmed, N., Mozafari, M., Nair, K., Coates, P. & Sefat, F. (2019) <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780081025611000191">Scaffolds for reconstruction of the diaphragm. </a> <em>Handbook of Tissue Engineering Scaffolds: Volume Two, </em> 449-474. </td>
-        <td><a href="https://www.sciencedirect.com/science/article/abs/pii/B9780081025611000191" target="_blank"><img src="/images/tissue_eng_handbook_vol2.jpg" alt="Handbook of Tissue Engineering Scaffolds: Volume Two" class="pub-pic"/></a></td>
+        <td><a href="https://www.sciencedirect.com/science/article/abs/pii/B9780081025611000191" target="_blank"><img src="images/tissue_eng_handbook_vol2.jpg" alt="Handbook of Tissue Engineering Scaffolds: Volume Two" class="pub-pic"/></a></td>
       </tr>
       <tr>
         <td colspan="2" class="hidden"><b>Abstract:</b> The diaphragm is a crucial mammalian skeletal muscle, essential for respiration and to sustain human life. Besides respiration, the complex organ offers a physical barrier between the thoracic and abdominal cavities. Unfortunately, the surgical approach for a compromised diaphragm is generally associated with significant risks of defect recurrence, infection, and inadequate growth potential and can cause reformed damaged tissue structures. Consequently, the need for diaphragm resection necessitates the field of tissue engineering to reestablish physiological function and maintenance [1]. Recent therapies employ implantable biodegradable three-dimensional scaffolds to overcome congenital or acquired disorders of the diaphragm. This interdisciplinary field requires a thorough understanding of structural integrity and the diaphragmatic anatomy using pioneered scaffolds to replicate the native architecture, enhancing mechanical properties. The principles of material science are combined with cell transplantation and appropriate tissue perfusion to produce the ideal biomaterial scaffolds, ensuring durability, biodegradability, nonimmunogenic responses, the reduction of morbidity, and reparation to poor muscle contraction [2,3].</td>
@@ -199,28 +206,30 @@ Conclusion: Hip and knee replacement risk can be predicted up to 5 years in adva
 
       <tr>
         <td style="text-align: left;">Hancox, Z., Yousaf, S., Khurshid, Z., Zafar, M., Youseffi, M., Mozafari, M., Tuinea-Bobe, C. & Sefat, F. (2019) <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780081025635000277">Scaffolds for dental cementum. </a> <em>Handbook of Tissue Engineering Scaffolds: Volume One,</em> 563-594. </td>
-        <td><a href="https://www.sciencedirect.com/science/article/abs/pii/B9780081025635000277" target="_blank"><img src="/images/tissue_eng_handbook_vol1.jpg" alt="Handbook of Tissue Engineering Scaffolds: Volume One" class="pub-pic"/></a></td>
+        <td><a href="https://www.sciencedirect.com/science/article/abs/pii/B9780081025635000277" target="_blank"><img src="images/tissue_eng_handbook_vol1.jpg" alt="Handbook of Tissue Engineering Scaffolds: Volume One" class="pub-pic"/></a></td>
       </tr>
       <tr>
         <td colspan="2" class="hidden"><b>Abstract:</b> Throughout this chapter, the reader will gain an insight into the structure of the cementum, formation of the cementum, common issues associated with the cementum, and how these problems could be corrected with the use of tissue-engineered scaffold techniques. Sections on cell and biomaterial selection are included, enabling detailed breakdown of the best combination of materials. Scaffold synthesis methods are covered, with details on how previous experiments have been altered to promote higher cementum formation and how to sufficiently meet the necessary mechanical properties, to withstand the forces within the mouth. On completion of this chapter, the importance of finding alternative methods to repair cementum problems will be covered, along with sufficient information on scaffolding techniques. </td>
       </tr>
 
     </table>
-</div>
+</section>
 </main>
 
 <footer>
-    <p><a href="https://www.linkedin.com/in/zoelouisehancox/?originalSubdomain=uk" target="_blank">
+    <p><a href="https://www.linkedin.com/in/zoelouisehancox/?originalSubdomain=uk" target="_blank" rel="noopener noreferrer">
         <img src="images/linkedin_logo.png" alt="LinkedIn" class="footer-image"/></a> 
-      <a href="https://www.researchgate.net/profile/Zoe-Hancox-2" target="_blank">
+      <a href="https://www.researchgate.net/profile/Zoe-Hancox-2" target="_blank" rel="noopener noreferrer">
         <img src="images/researchgate_logo.png" alt="ResearchGate" class="footer-image"/></a> 
-      <a href="https://scholar.google.com/citations?hl=en&user=W5HfvpUAAAAJ" target="_blank">
+      <a href="https://scholar.google.com/citations?hl=en&user=W5HfvpUAAAAJ" target="_blank" rel="noopener noreferrer">
         <img src="images/google_scholar_logo.png" alt="Google Scholar" class="footer-image"/></a>
-      <a href="https://orcid.org/0000-0003-0473-5971" target="_blank">
+      <a href="https://orcid.org/0000-0003-0473-5971" target="_blank" rel="noopener noreferrer">
         <img src="images/orcid_logo.png" alt="Orcid" class="footer-image"/></a>
-      <a href="https://github.com/ZoeHancox" target="_blank">
+      <a href="https://github.com/ZoeHancox" target="_blank" rel="noopener noreferrer">
         <img src="images/github_logo.png" alt="GitHub" class="footer-image"/></a>  
     </p> 
   </footer>
 <script src="publications_script.js"></script>
 </body>
+</html>
+

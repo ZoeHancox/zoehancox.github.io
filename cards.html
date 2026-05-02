@@ -2,12 +2,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zoe Hancox</title>
+  <title>Creativity | Zoe Hancox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="home-page cards-page">
     <header>
       <div class="header">
         <h1>Zoe Hancox</h1>
@@ -16,35 +19,79 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <!--
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          -->
           <li><a href="publications.html">Publications</a></li>
-          <li><a href="cards.html">Cards</a></li>
+          <li><a href="cards.html" aria-current="page">Creativity</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="site-main">
+      <section class="section-card creativity-hero">
+        <p class="eyebrow">Creativity</p>
+        <h2>Cards, Journals, and Creative Projects</h2>
+        <p>This page brings together my handmade card designs and journals I publish on Amazon under Dr Organised.</p>
+      </section>
 
-    <a data-pin-do="embedBoard" data-pin-board-width="800" data-pin-scale-height="300" data-pin-scale-width="100" href="https://www.pinterest.com/zhancox/homemade-cards/"></a>
-    <noscript>
-      <p><a href="https://www.pinterest.com/zhancox/homemade-cards/" target="_blank" rel="noopener noreferrer">View my Pinterest cards board</a></p>
-    </noscript>
+      <section class="section-card pinterest-card">
+        <h2>Handmade Cards</h2>
+        <p>Browse my handmade card designs on Pinterest.</p>
 
+        <a data-pin-do="embedBoard" data-pin-board-width="800" data-pin-scale-height="300" data-pin-scale-width="100" href="https://www.pinterest.com/zhancox/homemade-cards/"></a>
+        <noscript>
+          <p><a href="https://www.pinterest.com/zhancox/homemade-cards/" target="_blank" rel="noopener noreferrer">View my Pinterest cards board</a></p>
+        </noscript>
+      </section>
+
+      <section class="section-card journals-card">
+        <h2>Journals on Amazon</h2>
+        <p><a href="https://www.amazon.co.uk/s?i=stripbooks&rh=p_27%3ADr.%2BOrganised&s=relevancerank&text=Dr.+Organised&ref=dp_byline_sr_book_1" target="_blank" rel="noopener noreferrer">View all Dr Organised journals on Amazon</a></p>
+
+        <div class="journal-grid">
+          <article class="journal-item">
+            <a href="https://www.amazon.co.uk/PhD-Journal-Dr-Organised/dp/B0CHSVN3FN" target="_blank" rel="noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/71mckbKtPhL._SY342_.jpg" alt="PhD Journal cover">
+            </a>
+            <h3>PhD Journal</h3>
+            <p><a href="https://www.amazon.co.uk/PhD-Journal-Dr-Organised/dp/B0CHSVN3FN" target="_blank" rel="noopener noreferrer">View on Amazon</a></p>
+          </article>
+
+          <article class="journal-item">
+            <a href="https://www.amazon.co.uk/University-Student-Planner-Dr-Organised/dp/B0CKS1KRNX" target="_blank" rel="noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/81pfxwY-pKL._SY342_.jpg" alt="University Student Planner cover">
+            </a>
+            <h3>University Student Planner</h3>
+            <p><a href="https://www.amazon.co.uk/University-Student-Planner-Dr-Organised/dp/B0CKS1KRNX" target="_blank" rel="noopener noreferrer">View on Amazon</a></p>
+          </article>
+
+          <article class="journal-item">
+            <a href="https://www.amazon.co.uk/Well-being-Journal-Diary-Dr-Organised/dp/B0CP8J9CV4" target="_blank" rel="noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/61bNzwr5bsL._SY342_.jpg" alt="Well-being Journal and Diary cover">
+            </a>
+            <h3>Well-being Journal and Diary</h3>
+            <p><a href="https://www.amazon.co.uk/Well-being-Journal-Diary-Dr-Organised/dp/B0CP8J9CV4" target="_blank" rel="noopener noreferrer">View on Amazon</a></p>
+          </article>
+
+          <article class="journal-item">
+            <a href="https://www.amazon.co.uk/Tru-Acupuncture-Diary-2026-2028-Organised/dp/B0FXDWBZWW" target="_blank" rel="noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/41ChRggug3L._SY342_.jpg" alt="Tru Acupuncture Diary 2026-2028 cover">
+            </a>
+            <h3>Tru Acupuncture Diary 2026-2028</h3>
+            <p><a href="https://www.amazon.co.uk/Tru-Acupuncture-Diary-2026-2028-Organised/dp/B0FXDWBZWW" target="_blank" rel="noopener noreferrer">View on Amazon</a></p>
+          </article>
+        </div>
+      </section>
     </main>
   
 <footer>
-  <p><a href="https://www.linkedin.com/in/zoelouisehancox/?originalSubdomain=uk" target="_blank">
+  <p><a href="https://www.linkedin.com/in/zoelouisehancox/?originalSubdomain=uk" target="_blank" rel="noopener noreferrer">
       <img src="images/linkedin_logo.png" alt="LinkedIn" class="footer-image"/></a> 
-    <a href="https://www.researchgate.net/profile/Zoe-Hancox-2" target="_blank">
+    <a href="https://www.researchgate.net/profile/Zoe-Hancox-2" target="_blank" rel="noopener noreferrer">
       <img src="images/researchgate_logo.png" alt="ResearchGate" class="footer-image"/></a> 
-    <a href="https://scholar.google.com/citations?hl=en&user=W5HfvpUAAAAJ" target="_blank">
+    <a href="https://scholar.google.com/citations?hl=en&user=W5HfvpUAAAAJ" target="_blank" rel="noopener noreferrer">
       <img src="images/google_scholar_logo.png" alt="Google Scholar" class="footer-image"/></a>
-    <a href="https://orcid.org/0000-0003-0473-5971" target="_blank">
+    <a href="https://orcid.org/0000-0003-0473-5971" target="_blank" rel="noopener noreferrer">
       <img src="images/orcid_logo.png" alt="Orcid" class="footer-image"/></a>
-    <a href="https://github.com/ZoeHancox" target="_blank">
+    <a href="https://github.com/ZoeHancox" target="_blank" rel="noopener noreferrer">
       <img src="images/github_logo.png" alt="GitHub" class="footer-image"/></a> 
   </p> 
 </footer>

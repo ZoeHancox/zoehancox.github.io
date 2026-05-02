@@ -243,8 +243,109 @@ button:hover {
 }
 
 .pub-pic {
-  width: 30px;
-  height: 40px;
+  width: 58px;
+  height: 74px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #d8d3cb;
+}
+
+.publications-hero {
+  text-align: left;
+}
+
+.publications-list {
+  text-align: left;
+}
+
+.publications-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.6rem;
+  background: #fffcf8;
+  border: 1px solid #e6e1d8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.publications-table td {
+  padding: 0.9rem 0.85rem;
+  vertical-align: top;
+  border-bottom: 1px solid #ece7de;
+}
+
+.publications-table tr:last-child td {
+  border-bottom: none;
+}
+
+.publications-table td:last-child {
+  width: 90px;
+  text-align: center;
+}
+
+.publications-table tr.showing {
+  display: table-row;
+  background: #f8f5ef;
+}
+
+.publications-table td.showing {
+  display: table-cell;
+}
+
+.publications-table .hidden b {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+}
+
+.pinterest-card {
+  text-align: left;
+}
+
+.creativity-hero {
+  text-align: left;
+}
+
+.journals-card {
+  text-align: left;
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.journal-item {
+  background: #fffcf8;
+  border: 1px solid #e6e1d8;
+  border-radius: 12px;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.journal-item img {
+  width: 100%;
+  max-width: 170px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ddd7cd;
+}
+
+.journal-item h3 {
+  font-size: 1rem;
+  margin: 0.65rem 0 0.25rem;
+}
+
+.journal-item p {
+  margin: 0;
+}
+
+.contact-card {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 footer {
@@ -395,5 +496,22 @@ iframe {
 
   button {
     width: 100%;
+  }
+
+  .publications-table td {
+    padding: 0.65rem;
+    display: block;
+    width: 100%;
+  }
+
+  .publications-table td:last-child {
+    width: 100%;
+    text-align: left;
+    padding-top: 0.2rem;
+  }
+
+  .journal-item img {
+    max-width: 150px;
+    height: 205px;
   }
 }
