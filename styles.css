@@ -135,6 +135,18 @@ a:hover {
   max-width: 800px;
 }
 
+.about-images {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+}
+
 
 #quote-container {
   max-width: 100%;
