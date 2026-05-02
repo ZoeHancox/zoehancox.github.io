@@ -1,187 +1,279 @@
-/* Reset some default styles */
-body {
-  margin: 10px;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #424242;
-  text-align: center;
+:root {
+  --bg: #f6f4ef;
+  --bg-accent: #fffaf1;
+  --card: #ffffff;
+  --ink: #233241;
+  --muted: #52606d;
+  --brand: #b55645;
+  --brand-deep: #813326;
+  --brand-soft: #f6d8c8;
+  --line: #d7d3c9;
+  --shadow: 0 12px 28px rgba(24, 34, 44, 0.1);
 }
 
+* {
+  box-sizing: border-box;
+}
 
-/* Header styles */
-header {
-  background-color: #AD7A99;
-  color: #fff;
-  padding: 20px;
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--ink);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  line-height: 1.65;
+  background:
+    radial-gradient(circle at 12% 10%, #f9d5b8 0, rgba(249, 213, 184, 0.15) 18%, transparent 40%),
+    linear-gradient(180deg, var(--bg-accent) 0%, var(--bg) 45%, #f0ede7 100%);
+}
+
+.home-page header {
+  background: linear-gradient(120deg, #2f5c6e 0%, #244958 50%, #1e3a46 100%);
+  color: #ffffff;
+  padding: 1.2rem 1rem;
+  border-bottom: 5px solid #f7b57e;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
-  text-align: left;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-family: "Newsreader", Georgia, serif;
+  letter-spacing: 0.02em;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto 0.75rem;
 }
 
-.header-links {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px; /* Adjust the margin as needed */
-  border-radius: 50%;
+nav {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-}
-
-nav ul li {
-  margin-right: 10px;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
-  color: #fff;
+  display: inline-block;
+  color: #ffffff;
   text-decoration: none;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
 }
 
-/* Main section styles */
-main {
-  padding: 20px;
-  text-align: center;
+nav ul li a:hover,
+nav ul li a[aria-current="page"] {
+  background-color: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+a {
+  color: var(--brand-deep);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--brand);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #3e8ed0;
+  outline-offset: 3px;
+}
+
+.site-main {
+  max-width: 1160px;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.container {
+  display: grid;
+  gap: 1.5rem;
 }
 
 section {
-  margin-bottom: 40px;
-}
-
-section h2 {
-  font-size: 2rem;
-}
-
-
-.project {
-  margin-bottom: 20px;
-}
-
-.project h3 {
-  font-size: 1.5rem;
   margin: 0;
 }
 
-button {
-  background-color: #B1D1E3;
-  font-size: 20px;
-  color: #333333;
-  padding: 10px;
-  border-radius: 10px;
-  border: 3px solid #808080;
+.section-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: clamp(1rem, 1.8vw, 1.75rem);
 }
 
-button:hover {
-  background-color: #454ADE;
-  color: #ffffff;
+section h2 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  font-family: "Newsreader", Georgia, serif;
 }
 
-/* Link styles */
-a {
-  text-decoration: none; /* Remove underline */
-  color: #454ADE; /* Set default link color */
+section h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.65rem;
 }
 
-/* Link styles on hover */
-a:hover {
-  color: #A6B727; /* Change link color on hover */
-  /* text-decoration: underline; Add underline on hover */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1.25rem;
+  align-items: center;
 }
 
-.hidden{
-  display: none;
+.eyebrow {
+  display: inline-block;
+  margin: 0 0 0.35rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: #5f2f28;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
-.showing {
-  display: block;
-  font-family: calibri, sans-serif;
-  /* background-color: #509fcb; */
-  color: #000000;
-  /* width: 400px;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 10px; */
+.text-container {
+  text-align: left;
+  margin: 0.6rem 0;
+  max-width: 70ch;
 }
 
-.container{
-  text-align: justify;
-  max-width: 800px;
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center;
-  height: 100vh; */
-  /* border: 1px solid #ccc; */
-}
-
-.image-container{
+.quick-links {
   display: flex;
-  align-items:left;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
 }
 
-.text-container{
-  text-align: justify;
-  max-width: 800px;
+.quick-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #d39f87;
+  color: var(--brand-deep);
+  background: #fff5ed;
+  font-weight: 700;
+}
+
+.quick-link:hover {
+  background: #fbe6d9;
 }
 
 .about-images {
   display: flex;
-  gap: 16px;
+  gap: 0.8rem;
+  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
 .about-image {
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 16px rgba(24, 34, 44, 0.16);
   max-width: 100%;
   height: auto;
 }
 
-
-#quote-container {
-  max-width: 100%;
-  width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #ccc;
+.experience-block {
+  text-align: left;
+  padding: 1rem;
+  border: 1px solid #e9e4dc;
+  border-radius: 12px;
+  margin-top: 1rem;
+  background: #fffcf8;
 }
 
+.experience-list {
+  margin: 0.65rem 0 0.8rem 1.1rem;
+  padding: 0;
+}
 
-/* Publication Picture */
-.pub-pic{
+.experience-list li {
+  margin-bottom: 0.45rem;
+}
+
+button {
+  background-color: #d6e8f3;
+  color: #1e2a33;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  border: 2px solid #8eaac0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #9cc2d9;
+}
+
+#quote-container {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#quote-text {
+  min-height: 3rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.pub-pic {
   width: 30px;
   height: 40px;
 }
 
-
-/* Footer styles */
 footer {
-  background-color: #AD7A99;
+  background: #1f3844;
   color: #fff;
-  padding: 10px;
+  padding: 0.8rem;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
-
-
 .footer-image {
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-  /* border: 1px solid #ccc; */
+  width: 32px;
+  height: 32px;
+  margin: 8px;
   border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.footer-image:hover {
+  transform: translateY(-2px);
+}
+
+.hidden {
+  display: none;
+}
+
+.showing {
+  display: block;
+  color: #000000;
 }
 
 /* ============================
@@ -191,14 +283,13 @@ Thesis Viewer Styles
 #thesis-container {
   display: flex;
   height: 80vh;
-  border: 1px solid #ccc;
-  margin-top: 2rem;
+  border: 1px solid #d8d3cb;
+  margin-top: 1.2rem;
   position: relative;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-
-
-/* Main thesis area */
 #main-thesis {
   flex: 1;
   display: flex;
@@ -206,16 +297,15 @@ Thesis Viewer Styles
 }
 
 #toolbar {
-  background: #f4f4f4;
+  background: #f8f6f2;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #d8d3cb;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 #toolbar button {
-  padding: 8px 12px;
-  cursor: pointer;
   margin-right: 10px;
 }
 
@@ -237,10 +327,9 @@ iframe {
   height: 100%;
 }
 
-/* Responsive video container */
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -254,10 +343,57 @@ iframe {
   height: 100%;
 }
 
-/* Responsive image */
 .responsive-img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 1rem auto;
+  border-radius: 12px;
+  border: 1px solid #ddd7cd;
+}
+
+@media (max-width: 900px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-images {
+    justify-content: flex-start;
+  }
+
+  #thesis-container {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-main {
+    margin-top: 1.2rem;
+    gap: 1rem;
+  }
+
+  .section-card {
+    border-radius: 12px;
+    padding: 0.9rem;
+  }
+
+  .about-images {
+    justify-content: center;
+  }
+
+  nav ul {
+    gap: 0.45rem;
+  }
+
+  nav ul li a {
+    font-size: 0.92rem;
+  }
+
+  #thesis-container {
+    height: 56vh;
+  }
+
+  button {
+    width: 100%;
+  }
 }
